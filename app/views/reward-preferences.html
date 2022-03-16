@@ -9,28 +9,26 @@
 {% endblock %}
 
 {% block content %}
+
+<p class="govuk-body">
+  Step 4 of 6. Exercise and reward preferences
+</p>
+
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        Choose your preferences
-      </h1>{{releaseVersion | log }}
-      <p>
-        Choose your exercise and reward preferences from the options below. 
-        This will help us tailor content and reccomendations to suit what you like best. You will be able to edit these once your account is set-up.
-      </p>
-
-      <p>
+      
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
             <div class="govuk-form-group">
               <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                   <h1 class="govuk-fieldset__heading">
-                  What is your preffered type of reward(s)?
+                  What type of reward(s) would you like to receive?
                   </h1>
                 </legend>
                 <div id="nationality-hint" class="govuk-hint">
-                  If you have more than one preferred method, select all options that are relevant to you.
+                  Select all that apply.
                 </div>
                 <div class="govuk-checkboxes" data-module="govuk-checkboxes">
                   <div class="govuk-checkboxes__item">
