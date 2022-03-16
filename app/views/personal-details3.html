@@ -6,28 +6,33 @@
 
 {% block content %}
 
-<fieldset class="govuk-fieldset">
-  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-    <h1 class="govuk-fieldset__heading">
-      Personal Details
-    </h1>
-  </legend>
-</fieldset>
+<a href="personal-details2.html" class="govuk-back-link">Back</a>
 
 <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
     <h1 class="govuk-fieldset__heading">
-      What is your full name?
+      Please enter your Home Address and Postcode
     </h1>
   </legend>
 
   <div class="govuk-form-group">
     <label class="govuk-label" for="address-town">
-      Full Name
+      Home Address
+    </label>
+    <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2">
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+      Postcode
     </label>
     <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2">
   </div>
 
 </fieldset>
+
+<button class="govuk-button" data-module="govuk-button">
+  Next
+</button>
 
 {% endblock %}
