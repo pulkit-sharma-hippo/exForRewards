@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<p class="govuk-body">
+  Step 3 of 5. Motivation and goals
+</p>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="countries-hint">
+    <!-- TITLE -->
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        What are your goals by using this service?
+      </h1>
+    </legend>
+
+    <!-- SUBTITLE -->
+    <div id="countries-hint" class="govuk-hint">
+      Please select all options that are relevant to you, or select "other" if your goal is not listed
+    </div>
+
+    <!-- OPTIONS -->
+    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+      <!-- OPTION 1 -->
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+        <label class="govuk-label govuk-checkboxes__label" for="countries">
+          Lose weight
+        </label>
+      </div>
+
+      <!-- OPTION 2 -->
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="countries-2" name="countries" type="checkbox" value="portugal">
+        <label class="govuk-label govuk-checkboxes__label" for="countries-2">
+          Gain muscle
+        </label>
+      </div>
+
+      <!-- OPTION 3 -->
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="countries-3" name="countries" type="checkbox" value="spain">
+        <label class="govuk-label govuk-checkboxes__label" for="countries-3">
+          Stay fit
+        </label>
+      </div>
+      
+      <div class="govuk-checkboxes__divider">or</div>
+
+      <!-- OPTION 4 -->
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="countries-4" name="countries" type="checkbox" value="none" data-aria-controls="conditional-countries-4" data-behaviour="exclusive">
+        <label class="govuk-label govuk-checkboxes__label" for="countries-4">
+          Other
+        </label>
+      </div>
+      <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-countries-4">
+        <div class="govuk-form-group">
+          <label class="govuk-hint" for="other-info">
+            Please specify your goal
+          </label>
+          <textarea class="govuk-textarea" id="other-info" name="other-info" rows="2" aria-describedby="other info hint"></textarea>
+        </div>
+      </div>
+
+    </div>
+  </fieldset>
+</div>
+
+<button class="govuk-button" data-module="govuk-button">
+  Continue
+</button>
+{% endblock %}
