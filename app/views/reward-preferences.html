@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Blank page
+{% endblock %}
+
+{% block content %}
+<a href="/exercise-preferences" class="govuk-back-link">Back</a>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Choose your preferences
+      </h1>{{releaseVersion | log }}
+      <p>
+        Choose your exercise and reward preferences from the options below. 
+        This will help us tailor content and reccomendations to suit what you like best. You will be able to edit these.
+      </p>
+
+      <p>
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                  <h1 class="govuk-fieldset__heading">
+                  What is your preffered type of reward(s)?
+                  </h1>
+                </legend>
+                <div id="nationality-hint" class="govuk-hint">
+                  If you have more than one preferred method, select all options that are relevant to you.
+                </div>
+                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
+                    <label class="govuk-label govuk-checkboxes__label" for="nationality">
+                      Voucher
+                    </label>
+                    <div id="nationality-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                      This includes...
+                    </div>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
+                    <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
+                      Cash
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+                    <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+                      Offers
+                    </label>
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+
+            
+                </div>
+                <form class"form" action="http://localhost:3000/additional-support-healthy-habits" method="post">
+                <button class="govuk-button" data-module="govuk-button">
+                  Continue
+                </button>
+                </form>
+              </fieldset>
+            </div>
+          </fieldset>
+        </div>
+      </p>
+
+
+{% endblock %}

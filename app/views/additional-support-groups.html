@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Blank page
+{% endblock %}
+
+{% block content %}
+<a href="/additional-support-healthy-habits" class="govuk-back-link">Back</a>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Additional Support
+      </h1>{{releaseVersion | log }}
+      <p>
+        There are several support groups set up in towns and cities for people to connect together and help motivate each other. If you want know more about this please indicate below.
+      </p>
+
+    </p>
+
+    <p>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 class="govuk-fieldset__heading">
+          Would you like to know about any support networks?
+        </h1>
+        </legend>
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="would-you-like-information-on-support-groups-and-networks" name="would-you-like-information-on-support-groups-and-networks" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="would-you-like-information-on-support-groups-and-networks">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="would-you-like-information-on-support-groups-and-networks-2" name="would-you-like-information-on-support-groups-and-networks" type="radio" value="scotland">
+        <label class="govuk-label govuk-radios__label" for="would-you-like-information-on-support-groups-and-networks-2">
+          No
+        </label>
+
+      </div>
+    </div>
+    <br>
+                  <br>
+
+            
+                </div>
+                <button class="govuk-button" data-module="govuk-button">
+                  Continue
+                </button>
+              </fieldset>
+  </fieldset>
+</div>
+
+{% endblock %}
