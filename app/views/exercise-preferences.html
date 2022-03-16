@@ -4,8 +4,11 @@
   Blank page
 {% endblock %}
 
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/fitness-details/date-birth">Back</a>
+{% endblock %}
+
 {% block content %}
-<a href="#" class="govuk-back-link">Back</a>
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
@@ -16,13 +19,12 @@
         This will help us tailor content and reccomendations to suit what you like best. You will be able to edit these once your account is set-up.
       </p>
 
-      <p>
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-              <h1 class="govuk-fieldset__heading">
+              <h2 class="govuk-fieldset__heading">
                 What are your preferred methods of exercise?
-              </h1>
+              </h2>
             </legend>
             <div id="nationality-hint" class="govuk-hint">
               If you have more than one preferred method, select all options that are relevant to you.
@@ -57,7 +59,7 @@
                 <br>
             
                 </div>
-                <form class"form" action="http://localhost:3000/reward-preferences#" method="post">
+                <form class"form" action="/reward-preferences" method="post">
                   <button class="govuk-button" data-module="govuk-button">
                     Continue
                   </button>
@@ -66,7 +68,6 @@
             </div>
           </fieldset>
         </div>
-      </p>
 
 
 {% endblock %}
