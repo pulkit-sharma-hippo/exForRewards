@@ -23,10 +23,10 @@
           </dt>
           <dd class="govuk-summary-list__value">
             {{data ['full-name']}}
-          }
+          
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a href="#">
+            <a href="/personal-details1">
               Change
               <span class="govuk-visually-hidden"> name</span>
             </a>
@@ -34,29 +34,27 @@
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Date of birth
+            Email Address
           </dt>
           <dd class="govuk-summary-list__value">
-            5 January 1978
+            {{data ['email']}}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a href="#">
+            <a href="/personal-details2">
               Change
-              <span class="govuk-visually-hidden"> date of birth</span>
+              <span class="govuk-visually-hidden"> Email Address</span>
             </a>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Contact information
+            Username
           </dt>
           <dd class="govuk-summary-list__value">
-            72 Guild Street
-            <br>London
-            <br>SE23 6FH
+            {{data ['username']}}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a href="#">
+            <a href="/personal-details2">
               Change
               <span class="govuk-visually-hidden"> contact information</span>
             </a>
@@ -64,16 +62,30 @@
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Contact details
+            Home Address
           </dt>
           <dd class="govuk-summary-list__value">
-            <p>07700 900457</p>
-            <p>sarah.phillips@example.com</p>
+            <p>{{data ['home-address']}}</p>
+            <p>{{data ['postcode']}}</p>
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a href="#">
+            <a href="/personal-detaisl3">
               Change
               <span class="govuk-visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Preferred method of contact
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{data ['contact-method']}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="/personal-details2">
+              Change
+              <span class="govuk-visually-hidden"> contact information</span>
             </a>
           </dd>
         </div>
