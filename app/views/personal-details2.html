@@ -4,9 +4,20 @@
   Blank page
 {% endblock %}
 
+{% block beforeContent %}
+<a href="personal-details1.html" class="govuk-back-link">Back</a>
+{% endblock %}
+
 {% block content %}
 
-<a href="personal-details1.html" class="govuk-back-link">Back</a>
+<p class="govuk-body">
+  Step 1 of 6. Personal details
+</p>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+              <form class="form" action="/personal-details3" method="post">
 
 <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -41,5 +52,9 @@
 <button class="govuk-button" data-module="govuk-button">
   Next
 </button>
+
+</form>
+</div>
+</div>
 
 {% endblock %}
