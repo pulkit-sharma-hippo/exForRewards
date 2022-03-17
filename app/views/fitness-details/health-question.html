@@ -14,9 +14,10 @@
   Step 2 of 6. Fitness details
 </p>
 
-<form class="form" action="/fitness-details/level-activity" method="post"></form>
-
-<div class="govuk-form-group">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  <form class="form" action="/fitness-details/level-activity" method="post">
+  <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
@@ -51,11 +52,14 @@
     </div>
 
   </fieldset>
-</div>
-
+  </div>
   <button class="govuk-button" data-module="govuk-button">
     Continue
   </button>
-</form>
+  </form>
+  </div>
+
+
+</div>
 
 {% endblock %}

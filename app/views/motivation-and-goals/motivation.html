@@ -14,9 +14,10 @@
   Step 3 of 6. Motivation and goals
 </p>
 
-<form class="form" action="/motivation-and-goals/goals" method="post"></form>
-
-<div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  <form class="form" action="/motivation-and-goals/goals" method="post">
+  <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
   <div class="govuk-form-group">
     <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="with-hint">
       Is there any reason in particular why you do or do not exercise regularly?
@@ -32,11 +33,14 @@
     You can enter up to 200 characters
   </div>
 
-</div>
-
+  </div>
   <button class="govuk-button" data-module="govuk-button">
     Continue
   </button>
-</form>
+  </form>
+  </div>
+
+
+</div>
 
 {% endblock %}

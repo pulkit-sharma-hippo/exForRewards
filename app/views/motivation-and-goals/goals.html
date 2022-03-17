@@ -14,9 +14,10 @@
   Step 3 of 6. Motivation and goals
 </p>
 
-<form class="form" action="/exercise-preferences" method="post"></form>
-
-<div class="govuk-form-group">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+  <form class="form" action="/exercise-preferences" method="post">
+  <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="countries-hint">
     <!-- TITLE -->
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -27,7 +28,7 @@
 
     <!-- SUBTITLE -->
     <div id="countries-hint" class="govuk-hint">
-      Please select all options that are relevant to you, or select "other" if your goal is not listed
+      Select all that apply. Select "other" if your goal is not listed
     </div>
 
     <!-- OPTIONS -->
@@ -76,11 +77,15 @@
 
     </div>
   </fieldset>
-</div>
 
+  </div>
   <button class="govuk-button" data-module="govuk-button">
     Continue
   </button>
-</form>
+  </form>
+  </div>
+
+
+</div>
 
 {% endblock %}
