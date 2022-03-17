@@ -91,18 +91,18 @@
         </div>
       </dl>
 
-      <h2 class="govuk-heading-m">Application details</h2>
+      <h2 class="govuk-heading-m">Fitness details</h2>
 
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Previous application number
+            Date of birth
           </dt>
           <dd class="govuk-summary-list__value">
-            502135326
+            {{data ['dob1']}}/{{data ['dob2']}}/{{data ['dob3']}}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a href="#">
+            <a href="/fitness-details/date-birth">
               Change
               <span class="govuk-visually-hidden"> previous application number</span>
             </a>
@@ -110,10 +110,12 @@
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Licence type
+            Weight
           </dt>
           <dd class="govuk-summary-list__value">
-            For personal use
+            {{data ['weight1']}}
+            {{data ['weight2']}}
+
           </dd>
           <dd class="govuk-summary-list__actions">
             <a href="#">
@@ -122,6 +124,40 @@
             </a>
           </dd>
         </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Height
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{data ['height1']}}
+            {{data ['height2']}}
+
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="#">
+              Change
+              <span class="govuk-visually-hidden"> licence type</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Health conditions
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{data ['health-condition']}}
+            <br>
+            {{data ['more-detail']}}
+
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="#">
+              Change
+              <span class="govuk-visually-hidden"> licence type</span>
+            </a>
+          </dd>
+        </div>
+
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Home address
