@@ -9,6 +9,11 @@
 {% endblock %}
 
 {% block content %}
+
+<p class="govuk-body">
+  Step 6 of 6. Check your answers
+</p>
+
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds-from-desktop">
 
@@ -212,6 +217,7 @@
 
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
         <h2 class="govuk-heading-m">Exercise and reward preferences</h2>
+
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             How do you like to exercise?
@@ -226,12 +232,50 @@
             </a>
           </dd>
         </div>
+        
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Licence period
+          What type of reward(s) would you like to receive?
           </dt>
           <dd class="govuk-summary-list__value">
-            Valid for 6 months
+            {{data ['rewards']}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="#">
+              Change
+              <span class="govuk-visually-hidden"> licence period</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">    
+        
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <h2 class="govuk-heading-m">Support information</h2>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Would you like information on healthy habits?
+          </dt>
+          <dd class="govuk-summary-list__value">
+           {{data ['healthy-habits']}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="#">
+              Change
+              <span class="govuk-visually-hidden"> home address</span>
+            </a>
+          </dd>
+        </div>
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Would you like to receive infromation about support groups?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{data ['would-you-like-information-on-support-groups-and-networks']}}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a href="#">
