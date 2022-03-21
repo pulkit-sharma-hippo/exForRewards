@@ -10,6 +10,31 @@ Fitness details
 
 {% block content %}
 
+<form class="form" action="question-1" method="post">
+
+  {% if data.error === '400' %}
+  <div class="govuk-form-group govuk-form-group--error">
+  {% else %}
+  <div class="govuk-form-group">
+  {% endif %}
+
+    {% if data.error === '400' %}
+    <fieldset class="govuk-fieldset" aria-describedby="where-do-you-live-error">
+    {% else %}
+    <fieldset class="govuk-fieldset">
+    {% endif %}
+
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 class="govuk-fieldset__heading">
+          Do you have any health conditions?
+        </h1>
+      </legend>
+      {% if data.error === '400' %}<p id="where-do-you-live-error" class="govuk-error-message">
+        <span class="govuk-visually-hidden">Error:</span> Select the country where you live
+      </p>
+      {% endif %}
+
+
 <p class="govuk-body">
   Step 2 of 6. Fitness details
 </p>
