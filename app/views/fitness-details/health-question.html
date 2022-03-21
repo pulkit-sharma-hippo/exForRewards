@@ -10,30 +10,21 @@ Fitness details
 
 {% block content %}
 
-<form class="form" action="question-1" method="post">
-
-  {% if data.error === '400' %}
-  <div class="govuk-form-group govuk-form-group--error">
-  {% else %}
-  <div class="govuk-form-group">
-  {% endif %}
-
-    {% if data.error === '400' %}
-    <fieldset class="govuk-fieldset" aria-describedby="where-do-you-live-error">
-    {% else %}
-    <fieldset class="govuk-fieldset">
-    {% endif %}
-
-      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-        <h1 class="govuk-fieldset__heading">
-          Do you have any health conditions?
-        </h1>
-      </legend>
-      {% if data.error === '400' %}<p id="where-do-you-live-error" class="govuk-error-message">
-        <span class="govuk-visually-hidden">Error:</span> Select the country where you live
-      </p>
-      {% endif %}
-
+<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="govuk-error-summary__body">
+    <ul class="govuk-list govuk-error-summary__list">
+      <li>
+        <a href="#passport-issued-day">The date your passport was issued must be in the past</a>
+      </li>
+      <li>
+        <a href="#postcode-input">Enter a postcode, like AA1 1AA</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
 <p class="govuk-body">
   Step 2 of 6. Fitness details
