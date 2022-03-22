@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Goals
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="motivation">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<p class="govuk-body">
+  Step 3 of 6. Motivation and goals
+</p>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form class="form" action="exercise-preferences" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="countries-hint">
+          <!-- TITLE -->
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              What do you hope to achieve by using this service?
+            </h1>
+          </legend>
+
+          <!-- SUBTITLE -->
+          <div id="countries-hint" class="govuk-hint">
+            Select all that apply. Select "other" if your goal is not listed
+          </div>
+      
+          <!-- OPTIONS -->
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <!-- OPTION 1 -->
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="lose-weight" name="goals" type="checkbox" value="Lose weight">
+              <label class="govuk-label govuk-checkboxes__label" for="lose-weight">
+                Lose weight
+              </label>
+            </div>
+
+            <!-- OPTION 2 -->
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="lose-weight-2" name="goals" type="checkbox" value="Gain muscle">
+              <label class="govuk-label govuk-checkboxes__label" for="lose-weight-2">
+                Gain muscle
+              </label>
+            </div>
+
+            <!-- OPTION 3 -->
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="lose-weight-3" name="goals" type="checkbox" value="Stay fit">
+              <label class="govuk-label govuk-checkboxes__label" for="lose-weight-3">
+                Stay fit
+              </label>
+            </div>
+      
+            <div class="govuk-checkboxes__divider">or</div>
+
+            <!-- OPTION 4 -->
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="lose-weight-4" name="goals" type="checkbox" value="none" data-aria-controls="conditional-lose-weight-4" data-behaviour="exclusive">
+              <label class="govuk-label govuk-checkboxes__label" for="lose-weight-4">
+                Other
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-lose-weight-4">
+              <div class="govuk-form-group">
+                <label class="govuk-hint" for="other-info">
+                  Please specify your goal
+                </label>
+                <textarea class="govuk-textarea" id="other-info" name="other-info" rows="2" aria-describedby="other info hint"></textarea>
+              </div>
+            </div>
+        </fieldset>
+      </div>
+        
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+    </form>
+  </div>
+
+
+</div>
+
+{% endblock %}
