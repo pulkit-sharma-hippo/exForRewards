@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Fitness details
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/fitness-details/date-birth">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<p class="govuk-body">
+  Step 2 of 6. Fitness details
+</p>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form class="form" action="/fitness-details/height" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              What is your current weight?
+            </h1>
+          </legend>
+
+          <p id="more-detail-hint" class="govuk-hint">
+            Please enter your current weight in kg or pounds. This information will help us calculate your body mass index to tailor content and recommendations that suit you best
+          </p>
+
+          <div class="govuk-form-group">
+            <div class="govuk-input__wrapper"><input class="govuk-input govuk-input--width-5" id="weight-kg" name="weight1" type="text" spellcheck="false">
+              <div class="govuk-input__suffix" aria-hidden="true">kg</div>
+            </div>
+          </div>
+
+          <p class="govuk-body">
+            or
+          </p>
+
+          <div class="govuk-form-group">
+            <div class="govuk-input__wrapper"><input class="govuk-input govuk-input--width-5" id="weight-lbs" name="weight2" type="text" spellcheck="false">
+              <div class="govuk-input__suffix" aria-hidden="true">lbs</div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
