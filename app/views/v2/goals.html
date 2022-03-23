@@ -22,11 +22,14 @@
           <!-- TITLE -->
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              What are you aiming for through taking part in this service?
+              What do you hope to achieve by using this service?
             </h1>
           </legend>
 
-          
+          <!-- SUBTITLE -->
+          <div id="countries-hint" class="govuk-hint">
+            Select all that apply. Select "other" if your goal is not listed
+          </div>
       
           <!-- OPTIONS -->
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
@@ -48,31 +51,17 @@
 
             <!-- OPTION 3 -->
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="lose-weight-2" name="goals" type="checkbox" value="Gain muscle">
-              <label class="govuk-label govuk-checkboxes__label" for="lose-weight-2">
-                Manage a health condition
+              <input class="govuk-checkboxes__input" id="lose-weight-3" name="goals" type="checkbox" value="Stay fit">
+              <label class="govuk-label govuk-checkboxes__label" for="lose-weight-3">
+                Stay fit
               </label>
             </div>
+      
+            <div class="govuk-checkboxes__divider">or</div>
 
             <!-- OPTION 4 -->
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="lose-weight-2" name="goals" type="checkbox" value="Gain muscle">
-              <label class="govuk-label govuk-checkboxes__label" for="lose-weight-2">
-                Introduce fitness into your routine
-              </label>
-            </div>
-
-            <!-- OPTION 5 -->
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="lose-weight-3" name="goals" type="checkbox" value="Stay fit">
-              <label class="govuk-label govuk-checkboxes__label" for="lose-weight-3">
-                Maintain current fitness level
-              </label>
-            </div>
-
-            <!-- OPTION 6 -->
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="lose-weight-4" name="goals" type="checkbox" value="none">
+              <input class="govuk-checkboxes__input" id="lose-weight-4" name="goals" type="checkbox" value="none" data-aria-controls="conditional-lose-weight-4" data-behaviour="exclusive">
               <label class="govuk-label govuk-checkboxes__label" for="lose-weight-4">
                 Other
               </label>
