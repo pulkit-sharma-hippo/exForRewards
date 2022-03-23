@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Personal Details 3
+Personal Details 4
 {% endblock %}
 
 {% block beforeContent %}
-<a href="personal-details2" class="govuk-back-link">Back</a>
+<a href="personal-details3" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -16,7 +16,7 @@ Personal Details 3
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-              <form class="form" action="personal-details4" method="post">
+              <form class="form" action="date-birth" method="post">
 
 <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -26,10 +26,15 @@ Personal Details 3
   </legend>
 
   <div class="govuk-form-group">
-    <label class="govuk-label" for="address-postcode">
-      Postcode
+    <label class="govuk-label" for="sort">
+      Choose your address
     </label>
-    <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code">
+    <select class="govuk-select" id="sort" name="sort">
+      <option value="53 Hippoland, Leeds, L1234">53 Hippoland, Leeds, L1234</option>
+      <option value="54 Hippoland, Leeds, L1234" selected>54 Hippoland, Leeds, L1234</option>
+      <option value="55 Hippoland, Leeds, L1234">55 Hippoland, Leeds, L1234</option>
+      <option value="56 Hippoland, Leeds, L1234">56 Hippoland, Leeds, L1234</option>
+    </select>
   </div>
 
 </fieldset>
@@ -47,7 +52,7 @@ Personal Details 3
 
 
 <button class="govuk-button" data-module="govuk-button">
-  Find address
+  Continue
 </button>
 
 {% endblock %}
