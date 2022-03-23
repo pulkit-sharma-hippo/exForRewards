@@ -22,33 +22,43 @@
 <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
     <h1 class="govuk-fieldset__heading">
-      Please enter your email address and a username and password
+     Your login details
     </h1>
   </legend>
 
   <div class="govuk-form-group">
-    <label class="govuk-label" for="email">
+    <label class="govuk-heading-s" for="email">
       Email address 
     </label>
     <input class="govuk-input govuk-!-width-two-thirds" id="email" name="email" type="text" >
   </div>
 
   <div class="govuk-form-group">
-    <label class="govuk-label" for="username">
-      Username
+    <label class="govuk-heading-s" for="password">
+      Create your password 
     </label>
-    <input class="govuk-input govuk-!-width-two-thirds" id="username" name="username" type="text" >
+    <p id="password-hint" class="govuk-hint">Your password must:</p>
+      <ul class="govuk-hint govuk-list--bullet">
+        <li>be between 8 and 12 characters (letters and numbers only)</li>
+        <li>contain at least one letter (a-z)</li>
+        <li>contain at least one number (0-9)</li>
+      </ul>
+    </p>
+
+    <input class="govuk-input govuk-!-width-two-thirds" id="password" name="password" type="text" >
   </div>
 
   <div class="govuk-form-group">
-    <label class="govuk-label" for="password">
-      Password 
+    <label class="govuk-heading-s" for="password">
+      Confirm your password 
     </label>
     <input class="govuk-input govuk-!-width-two-thirds" id="password" name="password" type="text" >
   </div>
 
-</fieldset>
-
+</fieldset>            
+           
+          
+<br>
 <button class="govuk-button" data-module="govuk-button">
   Continue
 </button>
