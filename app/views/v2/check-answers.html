@@ -48,20 +48,7 @@
             </a>
           </dd>
         </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Username
-          </dt>
-          <dd class="govuk-summary-list__value">
-            {{data ['username']}}
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a href="personal-details2">
-              Change
-              <span class="govuk-visually-hidden"> contact information</span>
-            </a>
-          </dd>
-        </div>
+       
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Home Address
@@ -97,17 +84,8 @@
 
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
         <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Date of birth
-          </dt>
-          <dd class="govuk-summary-list__value">
-            {{data ['dob1']}}/{{data ['dob2']}}/{{data ['dob3']}}
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a href="date-birth">
-              Change
-              <span class="govuk-visually-hidden"> previous application number</span>
-            </a>
+          
+          
           </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -119,6 +97,7 @@
             {{data ['weight2']}}
 
           </dd>
+          
           <dd class="govuk-summary-list__actions">
             <a href="#">
               Change
@@ -126,35 +105,6 @@
             </a>
           </dd>
         </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Height
-          </dt>
-          <dd class="govuk-summary-list__value">
-            {{data ['height1']}}
-            {{data ['height2']}}
-
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a href="#">
-              Change
-              <span class="govuk-visually-hidden"> licence type</span>
-            </a>
-          </dd>
-        </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Health conditions
-          </dt>
-          <dd class="govuk-summary-list__value">
-            {{data ['health-condition']}}
-            <br>
-            {{data ['more-detail']}}
-
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a href="#">
-              Change
               <span class="govuk-visually-hidden"> licence type</span>
             </a>
           </dd>
@@ -181,7 +131,7 @@
 
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Please tell us what motivates you to do exercise or prevents you from exercising regularly.
+            What prevents you from exercising?
           </dt>
           <dd class="govuk-summary-list__value">
             {{data ['with-hint']}}
@@ -196,7 +146,7 @@
 
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            What do you hope to achieve by using this service?
+            What are you aiming for through taking part?
           </dt>
           <dd class="govuk-summary-list__value">
             {{data ['goals']}}
@@ -217,7 +167,7 @@
 
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            How do you like to exercise?
+            Select the type of exercises you enjoy 
           </dt>
           <dd class="govuk-summary-list__value">
            {{data ['exercise']}}
@@ -232,7 +182,7 @@
         
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-          What type of reward(s) would you like to receive?
+          What type of reward would you like to receive?
           </dt>
           <dd class="govuk-summary-list__value">
             {{data ['rewards']}}
@@ -253,15 +203,7 @@
         <h2 class="govuk-heading-m">Support information</h2>
 
         <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Would you like information on healthy habits?
-          </dt>
-          <dd class="govuk-summary-list__value">
-           {{data ['healthy-habits']}}
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a href="#">
-              Change
+          
               <span class="govuk-visually-hidden"> home address</span>
             </a>
           </dd>
@@ -269,7 +211,7 @@
         
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Would you like to receive infromation about support groups?
+            Would you like to receive information about support groups?
           </dt>
           <dd class="govuk-summary-list__value">
             {{data ['would-you-like-information-on-support-groups-and-networks']}}
